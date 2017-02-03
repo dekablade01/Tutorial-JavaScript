@@ -129,5 +129,19 @@ function max3(a,b,c)
 	console.log(max);
 	return max;
 }
-max3(3, 5, 2);
 
+// No 2
+function sumEven(n)
+{
+	var i = 2;
+	var sum = 0;
+	while(i<=n)
+	{
+		sum+=i;
+		i+=2;
+	}
+	console.log(sum);
+	return sum;
+}
+
+sumEven(5);
