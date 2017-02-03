@@ -66,4 +66,13 @@ function areaOfCircle(r)
 	return area;
 }
 
-areaOfCircle(100);
+function degreeToRadian(d)
+{
+	let radian = `${d/180} PI`;
+
+	console.log(radian);
+
+	return degreeToRadian;
+}
+
+degreeToRadian(180);
