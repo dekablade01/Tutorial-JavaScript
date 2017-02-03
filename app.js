@@ -92,4 +92,17 @@ function distance(x1, y1, x2, y2)
 	return length;
 }
 
-distance(0,0,1,1);
+// No 8 
+function container(x, w)
+{
+	let item_wight = x;
+	let support_weight = w;
+
+	var number_of_items = support_weight/item_wight;
+	number_of_items = Math.floor(number_of_items);
+
+	console.log(number_of_items);
+	return number_of_items;
+}
+
+container(1.25, 30);
