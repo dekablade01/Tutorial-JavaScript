@@ -208,4 +208,15 @@ function gcd(a, b)
 	return gcd;
 }
 
-gcd(4, 3);
+// No 6 
+function lcm(a, b)
+{
+	let divide = gcd(a,b);
+
+	let lcm = (a/divide)*(b/divide)*divide;
+	
+	console.log(lcm);
+	return lcm;
+}
+
+lcm(4,3)
