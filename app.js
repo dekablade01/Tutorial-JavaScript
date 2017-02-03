@@ -1,5 +1,9 @@
 // ---- 0.2 Function
 // No 1
+
+const stdin = process.openStdin();
+let content = '';
+
 function meterToFoot(m)
 {
 	let oneMeterIsEqualTo = 3.28084;
@@ -46,4 +50,14 @@ function cost(h, m, s)
 	}
 }
 
-cost(1,2,3);
+// No 4 
+function interest(n)
+{
+	let interest = 1.25/100;
+	let total = n + n*interest;
+
+	console.log(total);
+	return total;
+}
+
+interest(100);
