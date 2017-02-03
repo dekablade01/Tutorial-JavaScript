@@ -144,4 +144,22 @@ function sumEven(n)
 	return sum;
 }
 
-sumEven(5);
+// No 3
+function divider(n)
+{
+	var counter = 1;
+	var dividers = [];
+
+	while (counter <= n)
+	{
+		if (n % counter == 0)
+		{
+			dividers.push(counter);
+		}
+		counter+=1;
+	}
+	console.log(dividers);
+	return dividers;
+}
+
+divider(10);
