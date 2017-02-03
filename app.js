@@ -189,4 +189,23 @@ function isPrime(p)
 	
 }
 
-isPrime(17);
+// No 5
+function gcd(a, b)
+{
+	var min = Math.min(a,b);
+	var max = Math.max(a,b);
+	var counter = 1;
+	var gcd = 1;
+	while(counter<=min)
+	{
+		if(min%counter == 0 && max%counter ==0)
+		{
+			gcd = counter;
+		}
+		counter += 1;
+	}
+	console.log(gcd);
+	return gcd;
+}
+
+gcd(4, 3);
