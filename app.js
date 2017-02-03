@@ -1,8 +1,6 @@
 // ---- 0.2 Function
 // No 1
 
-const stdin = process.openStdin();
-let content = '';
 
 function meterToFoot(m)
 {
@@ -60,4 +58,12 @@ function interest(n)
 	return total;
 }
 
-interest(100);
+function areaOfCircle(r)
+{
+	let area = Math.PI*r*r
+
+	console.log(area);
+	return area;
+}
+
+areaOfCircle(100);
