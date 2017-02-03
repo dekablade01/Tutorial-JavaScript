@@ -162,4 +162,31 @@ function divider(n)
 	return dividers;
 }
 
-divider(10);
+// No 4
+function isPrime(p)
+{
+	var counter = 2 
+	var isPrime = true
+	if(p>0)
+	{
+		while (counter < p)
+		{
+		if ( p%counter == 0)
+			{
+				isPrime = false
+			}
+			counter += 1;
+		}
+
+	console.log(isPrime);
+	return isPrime;
+
+	}
+	else
+	{
+		console.log(`must be greater than 0`);
+	}
+	
+}
+
+isPrime(17);
