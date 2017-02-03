@@ -16,4 +16,34 @@ function area(width, height)
 	return area;
 }
 
-area(3,4);
+// No 3 
+function cost(h, m, s)
+{
+	let costPerMinutes = 1.5;
+
+	if (s<60 && s>=0)
+	{
+		var totalMins = 0;
+		totalMins += h*60;
+		totalMins += m;
+		
+		if(s>0)
+		{
+			totalMins += 1;
+		}
+		else 
+		{
+			// do nothing
+		}
+		let totalCost = costPerMinutes*totalMins
+		console.log(totalCost);
+		return totalCost;
+	}
+	else
+	{
+		console.log(`wrong second`);
+		return null;
+	}
+}
+
+cost(1,2,3);
