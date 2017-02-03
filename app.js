@@ -105,4 +105,29 @@ function container(x, w)
 	return number_of_items;
 }
 
-container(1.25, 30);
+// ---- 0.4 Condition
+// No 1
+function max3(a,b,c)
+{
+	var max = 0;
+	if (a>=b && a>=c)
+	{
+		max = a;
+	}
+	else if (b>=a && b>=c)
+	{
+		max = b;
+	}
+	else if (c>=a && c>=b)
+	{
+		max = c;
+	}
+	else 
+	{
+		//
+	}
+	console.log(max);
+	return max;
+}
+max3(3, 5, 2);
+
