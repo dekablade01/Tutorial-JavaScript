@@ -57,7 +57,7 @@ function interest(n)
 	console.log(total);
 	return total;
 }
-
+// No 5
 function areaOfCircle(r)
 {
 	let area = Math.PI*r*r
@@ -65,7 +65,7 @@ function areaOfCircle(r)
 	console.log(area);
 	return area;
 }
-
+// No 6
 function degreeToRadian(d)
 {
 	let radian = `${d/180} PI`;
@@ -74,5 +74,22 @@ function degreeToRadian(d)
 
 	return degreeToRadian;
 }
+// No 7
+function distance(x1, y1, x2, y2)
+{
+	let max_x = Math.max(x1,x2);
+	let min_x = Math.min(x1,x2);
+	let max_y = Math.max(y1,y2);
+	let min_y = Math.min(y1,y2);
 
-degreeToRadian(180);
+	let delta_x = max_x - min_x;
+	let delta_y = max_y - min_y;
+
+	let length_power_2 = (delta_x*delta_x)+(delta_y*delta_y);
+	let length = Math.sqrt(length_power_2);
+
+	console.log(length);
+	return length;
+}
+
+distance(0,0,1,1);
