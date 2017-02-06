@@ -249,4 +249,24 @@ function countOdd(a, b)
 	
 }
 
-countOdd(2, 100);
+// No 8
+function divide35(n)
+{
+	var max = n;
+	var counter = 1;
+	var ableToDivide = [];
+
+	while (counter <= max)
+	{
+
+		if (counter%3 == 0 || counter%5 == 0)
+		{
+			ableToDivide.push(counter);
+		}
+		counter += 1;
+	}
+	console.log(ableToDivide);
+	return ableToDivide;
+}
+
+divide35(100);
