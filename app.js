@@ -219,4 +219,34 @@ function lcm(a, b)
 	return lcm;
 }
 
-lcm(4,3)
+// No 7 
+function countOdd(a, b)
+{
+	var min = Math.min(a,b);
+	let max = Math.max(a,b);
+
+	var odds = [];
+
+	if (min%2 == 0)
+	{
+		min += 1;
+		console.log(`first is even`);
+	}
+	else
+	{
+		// 
+	}
+		var counter = min;
+
+		while(counter <= max)
+		{
+			odds.push(counter);
+			counter += 2;
+		}
+
+		console.log(odds.length);
+		return odds.length;
+	
+}
+
+countOdd(2, 100);
