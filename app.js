@@ -258,15 +258,33 @@ function divide35(n)
 
 	while (counter <= max)
 	{
-
 		if (counter%3 == 0 || counter%5 == 0)
 		{
 			ableToDivide.push(counter);
 		}
 		counter += 1;
 	}
-	console.log(ableToDivide);
-	return ableToDivide;
+	console.log(ableToDivide.length);
+	return ableToDivide.length;
 }
 
-divide35(100);
+// No 9
+function countDivider(a, b, k)
+{
+	var min = a;
+	var max = b;
+	var counter = a;
+	var ableToDivide = [];
+	while (counter <= b)
+	{
+		if(counter%k ==0)
+		{
+			ableToDivide.push(counter);
+		}
+		counter += 1;
+	}
+	console.log(ableToDivide.length)
+	return ableToDivide.length
+}
+
+countDivider(10, 18, 5);
