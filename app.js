@@ -283,8 +283,8 @@ function countDivider(a, b, k)
 		}
 		counter += 1;
 	}
-	console.log(ableToDivide.length)
-	return ableToDivide.length
+	console.log(ableToDivide.length);
+	return ableToDivide.length;
 }
 
 // Excerise 3 -- String
@@ -292,6 +292,7 @@ function countDivider(a, b, k)
 
 function reverse(s)
 {
+	s = s.toLowerCase();
 	let length = s.length;
 	var newString = "";
 	var counter = length-1;
@@ -348,6 +349,26 @@ function isAnagram(s, t)
 		isAnagram = false;
 	}
 	console.log(isAnagram);
+	return isAnagram;
 }
 
-isAnagram("bnb", "bbn");
+// No 3
+function isPalindrome(s)
+{
+	var original = s; 
+	var afterReverse = reverse(s);
+	var isPalindrome = false;
+
+	if (original == afterReverse)
+	{
+		isPalindrome = true;
+	}
+	else
+	{
+		isPalindrome = false;
+	}
+
+	console.log(isPalindrome);
+	return isPalindrome;
+}
+isPalindrome("racecar");
