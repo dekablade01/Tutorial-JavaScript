@@ -306,6 +306,48 @@ function reverse(s)
 	return newString;
 }
 
-reverse("test reverse");
+// No 2
 
+function isAnagram(s, t)
+{
+	var isAnagram = true;
+	if (s.length == t.length)
+	{
+		let string_1 = s.toLowerCase();
+		let string_2 = t.toLowerCase();
 
+		var string_1_array = [];
+		var string_2_array = [];
+
+		var counter = string_1.length-1;
+
+		while(counter >= 0)
+		{
+			string_1_array[counter] += string_1[counter];
+			string_2_array[counter] += string_2[counter];
+			counter -= 1;
+		}
+		string_2_array.sort();
+		string_1_array.sort();
+		counter = 0;
+		while( counter < string_1_array.length )
+		{
+			if(string_1_array[counter] != string_2_array[counter])
+			{
+				isAnagram = false;
+			}
+			else
+			{
+
+			}
+			counter += 1;
+		}
+	}
+	else
+	{
+		isAnagram = false;
+	}
+	console.log(isAnagram);
+}
+
+isAnagram("bnb", "bbn");
