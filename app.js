@@ -1,4 +1,4 @@
-// ---- 0.2 Function
+// ---- Excercise 1 Function
 // No 1
 
 
@@ -105,7 +105,7 @@ function container(x, w)
 	return number_of_items;
 }
 
-// ---- 0.4 Condition
+// ---- Excerise 2 0.4 Condition
 // No 1
 function max3(a,b,c)
 {
@@ -287,4 +287,25 @@ function countDivider(a, b, k)
 	return ableToDivide.length
 }
 
-countDivider(10, 18, 5);
+// Excerise 3 -- String
+// No 1
+
+function reverse(s)
+{
+	let length = s.length;
+	var newString = "";
+	var counter = length-1;
+
+	while(counter >= 0)
+	{
+		newString += s[counter];
+
+		counter -= 1;
+	}
+	console.log(newString);
+	return newString;
+}
+
+reverse("test reverse");
+
+
