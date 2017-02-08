@@ -371,4 +371,20 @@ function isPalindrome(s)
 	console.log(isPalindrome);
 	return isPalindrome;
 }
-isPalindrome("racecar");
+
+// No 4
+function romanNumber(n) {
+    var r = '';
+       var num = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+       var roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+    for (var i = 0; i < num.length; i++) {
+        while (n >= num[i]) {
+            r = r + roman[i];
+            n = n - num[i];
+        }
+    }
+    console.log(r);
+    return r;
+}
+
+romanNumber(999);
